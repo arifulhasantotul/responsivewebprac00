@@ -1,0 +1,99 @@
+
+
+:root {
+    --primary: #3dcfd3;
+    --dark: #161616;
+    --pure: #fff;
+    --ternary: #898989;
+    --light: #f2f2f2;
+    --body: #c5e3f6;
+    --slow: all ease 0.3s;
+    --shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+
+}
+
+header{
+    background: var(--dark);
+}
+nav h1 img {
+    width: 5rem;
+    height: 5rem;
+}
+nav .navbar-item a {
+    color: var(--pure)
+}
+nav .navbar-item a:hover {
+    color: var(--primary);
+    transition: var(--slow);
+}
+nav .navbar-item.dropdown .dropdown-menu{
+    background: var(--dark);
+}
+nav #dataopen .btn:hover{
+    color:var(--primary);
+    border: 2px solid var(--primary);
+    background: var(--dark);
+    transition: var(--slow);
+}
+header section .left_header_div h4 span {
+    color: #ffa45c;
+}
+img {
+    width: calc(250px + 1.8vw);
+}
+section.body, .recipe, .popularity, .order{
+    background: var(--body);
+}
+section .contact .icon li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+section .contact .icon a .fab{
+    width: 30px;
+    height: 30px;
+    color: var(--pure);
+    background: var(--dark);
+    border-radius: 50%;
+    margin-right: 5px;
+    padding: 8px;
+    text-decoration: none;
+}
+section .contact .icon a .fab:hover{
+    background: var(--primary);
+    color: var(--dark)
+}
+section.recipe .card, section.popularity .card_wrapper {
+    box-shadow: var(--shadow);
+}
+section.recipe .card:hover, section.popularity .card_wrapper:hover {
+    transform: scale(1.015);
+    transition: var(--slow);
+}
+section.order form .btn[type="submit"] {
+    background: linear-gradient(to right, rgb(12, 235, 235), rgb(32, 227, 178), rgb(41, 255, 198));
+    box-shadow: var(--shadow);
+} 
+section.order form .btn[type="submit"]:hover,
+section.order form .btn[type="reset"]:hover {
+    transform: scale(1.02);
+    transition: var(--slow);
+}
+section.order form .btn[type="reset"] {
+    background: linear-gradient(to right, rgb(241, 39, 17), rgb(245, 175, 25));
+    box-shadow: var(--shadow);
+}
+footer{
+    background: linear-gradient(to right, rgb(195, 20, 50), rgb(36, 11, 54));
+}
+footer h1 span{
+    color: #ff6a00;
+}
+footer .container ul a {
+    text-decoration: none;
+    color: var(--pure);
+    padding-right: 1rem;
+}
