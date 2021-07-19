@@ -97,3 +97,10 @@ footer .container ul a {
     color: var(--pure);
     padding-right: 1rem;
 }
+
+/* @media only screen and (min-width: 576px) {
+
+    article .right_article_div .self_section {
+        text-align: center;
+    }
+} */
